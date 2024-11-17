@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    hikari:
+      auto-commit: false
+    url: jdbc:postgresql://localhost:5432/clothesshop
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database: postgresql
+
+api.prefix: /api/v1
+api-admin.prefix: /api/v1/admin
+
